@@ -37,7 +37,8 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   document.addEventListener('click', event => {
-    if (!navLinks.contains(event.target) && !menuToggle.contains(event.target)) closeMenu();
+    const clickedMenuToggle = event.composedPath().includes(menuToggle);
+    if (!navLinks.contains(event.target) && !clickedMenuToggle) closeMenu();
   });
 
   function updateScrollUI() {
