@@ -144,8 +144,7 @@ button {
 .hero-bg {
   position: absolute;
   inset: 0;
-  background: url("assets/srilanka.jpg")
-    center 47% / cover;
+  background: url("assets/srilanka.jpg") center 47% / cover;
   transform: scale(1.025);
   animation: heroZoom 16s ease-out forwards;
 }
